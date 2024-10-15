@@ -1,5 +1,5 @@
 {
-	"name": "cron",
+	"name": "@robojs/cron",
 	"description": "",
 	"version": "1.0.0",
 	"type": "module",
