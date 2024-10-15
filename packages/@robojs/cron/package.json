@@ -1,0 +1,72 @@
+{
+	"name": "cron",
+	"description": "",
+	"version": "1.0.0",
+	"type": "module",
+	"private": false,
+	"keywords": [
+		"activity",
+		"api",
+		"discord",
+		"embed",
+		"embedded app",
+		"http",
+		"robo",
+		"robo.js",
+		"sdk",
+		"server",
+		"typescript",
+		"vite",
+		"web"
+	],
+	"main": ".robo/build/index.js",
+	"license": "MIT",
+	"author": "Your Name <email>",
+	"contributors": [
+		"Your Name <email>"
+	],
+	"files": [
+		".robo/",
+		"src/",
+		"LICENSE",
+		"README.md"
+	],
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	},
+	"scripts": {
+		"build": "robo build plugin",
+		"dev": "robo build plugin --watch --tunnel",
+		"lint:style": "prettier --write .",
+		"prepublishOnly": "robo build plugin",
+		"tunnel": ".robo/bin/cloudflared tunnel --url http://localhost:3000"
+	},
+	"dependencies": {
+		"croner": "^8.1.2"
+	},
+	"devDependencies": {
+		"@discord/embedded-app-sdk": "latest",
+		"@swc/core": "latest",
+		"@types/node": "latest",
+		"@types/react": "latest",
+		"@types/react-dom": "latest",
+		"@vitejs/plugin-react-swc": "latest",
+		"discord.js": "latest",
+		"eslint-plugin-react-hooks": "latest",
+		"prettier": "latest",
+		"react": "latest",
+		"react-dom": "latest",
+		"robo.js": "latest",
+		"typescript": "latest",
+		"vite": "latest"
+	},
+	"peerDependencies": {
+		"robo.js": "^0.10.1"
+	},
+	"peerDependenciesMeta": {
+		"robo.js": {
+			"optional": false
+		}
+	}
+}
