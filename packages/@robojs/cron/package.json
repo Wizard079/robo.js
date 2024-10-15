@@ -35,7 +35,8 @@
 		"prepublishOnly": "robo build plugin"
 	},
 	"dependencies": {
-		"croner": "^8.1.2"
+		"croner": "^8.1.2",
+		"nanoid": "^5.0.7"
 	},
 	"devDependencies": {
 		"@swc/core": "latest",
